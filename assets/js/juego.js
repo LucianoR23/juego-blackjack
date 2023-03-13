@@ -88,7 +88,7 @@ const turnoCompu = (puntosMinimos) => {
         } else {
             alert('Computadora gana')
         }
-    }, 20);
+    }, 100);
     
 }
 
@@ -105,12 +105,10 @@ btnPedir.addEventListener('click', () => {
     divCartasJugador.append(imgCarta);
 
     if(puntosJugador > 21) {
-        console.warn('Jugador pierde');
         btnPedir.disabled = true;
         btnDetener.disabled = true;
         turnoCompu(puntosJugador);
     } else if (puntosJugador === 21) {
-        console.warn('21, genial');
         btnPedir.disabled = true;
         btnDetener.disabled = true;
         turnoCompu(puntosJugador);
