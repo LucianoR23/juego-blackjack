@@ -1,5 +1,5 @@
 const miModulo = (() => {
-    'use strict'
+    'use strict';
 
     let deck = [];
     const tipos = ['C', 'H', 'D', 'S'],
